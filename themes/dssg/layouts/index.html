@@ -2,18 +2,22 @@
 
     {{ .Content }}
 
-    <div class="w-100 pa4 center bg-dark-gray bt b--black-30  ">
-        
-        <h2 class="white">{{ i18n "homepage_staying_updated" }}</h2>
-        
-        <div class="flex-ns">
+    <center>
 
-            <div class="updates w-100 w-50-ns fl">
+    <div class="w-100 pa4 center bg-dark-gray bt b--black-30  ">
+
+        <h2 class="white"> <center>{{ i18n "homepage_staying_updated" }} </center> </h2>
+
+
+
+        <!-- <div class="flex-ns"> -->
+        <div>
+            <div>
                 {{ partial "newsletter.html" . }}
             </div>
-            <div class="white w-100 w-30-ns b--white-30">
-                
-                <h3 class="f4 pv0 mv0 normal">{{ i18n "homepage_dssg_elsewhere" }}</h3>
+
+            <div class="white">
+                <h2 class="f4 pv0 mv0 normal"> <b>{{ i18n "homepage_dssg_elsewhere" }}</b> </h2>
 
                 <ul class="list pa0">
                     <li class="mv2">
@@ -36,6 +40,7 @@
             </div>
         </div>
     </div>
+  </center>
 
     {{ partial "team.html" . }}
 
