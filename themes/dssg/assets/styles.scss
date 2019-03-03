@@ -11,20 +11,21 @@ $dssg-blue: rgba(0,166,248,.8);
     }
     ul, li {
         display: inline;
-        padding: 0;
+        padding: 10;
     }
     ul {
         &:not(:last-child) {
             &::after {
-                content: " // ";
+                content: " ";
             }
         }
     }
+
     li {
         list-style: none;
         &:not(:last-child) {
             &::after {
-                content: " / ";
+                content: " | "
             }
         }
     }
@@ -40,7 +41,7 @@ $dssg-blue: rgba(0,166,248,.8);
 
 .what-we-do {
     background: url(/images/front-page-pic-uncropped.jpg) no-repeat center center fixed;
-    background-size: cover;    
+    background-size: cover;
 }
 
 .bg-dssg-blue {
